@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+}
+body {
+  margin: 5px;
+}
+
+.box {
+  display: flex;
+  background-color: cyan;
+  border: 1px solid green;
+  font-size: 12px;
+  flex-direction: row;
+}
+
+.smallbox {
+  margin-right: 6px;
+  min-width: 300px;
+  max-width: 300px;
+  font-size: 12px;
+  background-color: bisque;
+}
+
+.textbox {
+  position: relative;
+  font-size: 12px;
+  background-color: darkgray;
+}
+
+
+
+@media (max-width: 550px) {
+  .box {
+    flex-direction: column;
+  }
+  .textbox {
+    float: left;
+    width: 300px;
+  }
+  .smallbox {
+    min-width: 100px;
+    max-width: 150px;
+  }
+}

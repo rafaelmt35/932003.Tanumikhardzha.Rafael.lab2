@@ -1,0 +1,50 @@
+* {
+  margin: 0%;
+}
+
+body {
+  padding: 5px;
+}
+
+.mainCont {
+  display: flex;
+  border-style: solid;
+  border-color: green;
+  background-color: cyan;
+  border-width: 2px;
+  flex-direction: row;
+}
+ul {
+  font-size: 13px;
+}
+p {
+  font-size: 13px;
+  position: relative;
+  background-color: darkgray;
+}
+.list {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: bisque;
+}
+@media (max-width: 500px) {
+  .mainCont {
+    flex-direction: column;
+  }
+  .list ul {
+    overflow: hidden;
+  }
+  .list ul li {
+    display: inline-block;
+  }
+  p {
+    float: left;
+    width: 100%;
+  }
+  .list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
